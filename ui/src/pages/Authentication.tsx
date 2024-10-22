@@ -5,10 +5,10 @@ import { icons } from "lucide-react";
 
 const Authentication = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-900 via-green-800 to-black">
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
       <Card className="w-full max-w-md mx-auto bg-transparent    border-none">
         <CardHeader className="space-y-1 p-6">
-          <h1 className="text-xl sm:text-2xl font-bold text-center bg-gradient-to-r from-green-600 to-black bg-clip-text text-black">
+          <h1 className="text-xl sm:text-2xl font-bold text-center bg-gradient-to-r from-green-600 to-black bg-clip-text text-white">
             Welcome Back
           </h1>
         </CardHeader>
