@@ -1,7 +1,9 @@
 // import React from 'react';
 // import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 // import { auth } from './firebase/config'; // Ensure this is correctly pointing to your firebase config
+import { Route, Routes } from 'react-router-dom';
 import Authentication from './pages/Authentication';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   // const handleGoogle = async (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -18,7 +20,11 @@ function App() {
   return (
     <>
       {/* <button onClick={handleGoogle}>Google</button> */}
-      <Authentication/>
+      
+      <Routes>
+        <Route path='/auth'  element={<Authentication/>}/>
+        <Route path='/' element={<LandingPage/>}/>
+      </Routes>
     </>
   );
 }
