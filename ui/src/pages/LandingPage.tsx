@@ -3,13 +3,13 @@ import Sidebar from "@/components/Sidebar";
 import { useEffect, useState } from "react";
 
 const LandingPage = () => {
-    // Khôi phục trạng thái sidebar từ localStorage
+   // Restore sidebar state from localStorage
     const [sidebarToggle, setSidebarToggle] = useState<boolean>(() => {
         const savedToggle = localStorage.getItem('sidebarToggle');
         return savedToggle ? JSON.parse(savedToggle) : false; // Mặc định là false nếu không có giá trị
     });
 
-    // Lưu trạng thái sidebar vào localStorage khi thay đổi
+    // Save sidebar state to localStorage when changed
     useEffect(() => {
         localStorage.setItem('sidebarToggle', JSON.stringify(sidebarToggle));
     }, [sidebarToggle]);
